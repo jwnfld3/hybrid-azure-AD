@@ -1,5 +1,5 @@
 
-# Lab: Checking if a Windows Server 2022 is Hybrid Azure AD Joined
+# Checking if a Windows Server 2022 is Hybrid Azure AD Joined
 
 ## Summary  
 This lab outlines the steps to check if a Windows Server 2022 is Hybrid Azure AD joined. A Hybrid Azure AD join configuration allows devices to be both domain-joined and registered in Azure AD, enabling cloud-based management alongside on-premises management. This lab demonstrates how to verify this configuration using several methods, including the Azure AD portal, local tools on the server, and Event Viewer logs.
