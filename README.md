@@ -48,15 +48,20 @@ This repository contains a lab that demonstrates how to connect a Windows Server
 3. Follow the instructions to configure synchronization for devices in your on-premises AD.
 4. Complete the setup, and allow Azure AD Connect to begin synchronizing devices.
 
-### Step 3: Verify Domain-Joined Server 2022
+### Step 3: Test Synchronization:
 
-1. On your **Windows Server 2022**, open **Settings** > **System** > **About**.
-2. Under **Computer name, domain, and workgroup settings**, ensure that the **Domain** is displayed as the correct Active Directory domain.
-3. If the server is not yet domain-joined, click **Change settings**, and then **Domain** to join the server to the correct domain.
+1. Initiate a manual sync by clicking on the "Run" button under Sync Status or use PowerShell to trigger a synchronization (e.g., Start-ADSyncSyncCycle -PolicyType Delta).
+2. Monitor the sync process to ensure it completes without errors.
+![image](https://github.com/user-attachments/assets/eea93991-5f63-4078-bdca-600bdb61cca0)
 
-### Step 4: Check Hybrid Azure AD Join Configuration on the Server
+### Step 4: Verify Synchronization in Azure AD:
 
-1. Open **Command Prompt** as Administrator.
-2. Run the command:  
-   ```powershell
-   dsregcmd /status
+1. Log in to the Azure AD portal and navigate to Azure Active Directory > Users to confirm that user objects from your on-premises AD have been successfully synchronized.
+![image](https://github.com/user-attachments/assets/35941d2c-65d6-4c5d-a508-5beace2810fa)
+
+2. Ensure that changes made in the on-premises AD are reflected in Azure AD, indicating that the sync process is working.
+![image](https://github.com/user-attachments/assets/2a49a527-7641-44bd-8d69-2261c32bbeed)
+
+
+
+
