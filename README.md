@@ -62,6 +62,8 @@ This repository contains a lab that demonstrates how to connect a Windows Server
 2. Ensure that changes made in the on-premises AD are reflected in Azure AD, indicating that the sync process is working.
 ![image](https://github.com/user-attachments/assets/2a49a527-7641-44bd-8d69-2261c32bbeed)
 
+# Conclusion
 
+This configuration enables Windows Server devices to be both domain-joined (on-premises) and Azure AD-joined (cloud), offering centralized management and improved security. By implementing Hybrid Azure AD Join, devices can authenticate seamlessly across both environments, enhancing user access and security across on-premises and cloud resources.
 
 
