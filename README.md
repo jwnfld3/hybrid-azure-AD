@@ -38,7 +38,15 @@ This repository contains a lab that demonstrates how to connect a Windows Server
 ### Step 2: Configure Hybrid Azure AD Join in Azure AD Connect
 
 1. Open **Azure AD Connect** and go to **Configure**.
+![image](https://github.com/user-attachments/assets/26879d87-1545-4b88-be2e-6991df0e19f6)
+![image](https://github.com/user-attachments/assets/f0595dc6-fd60-48fa-ab41-20f18ebd67be)
+
 2. Select **Hybrid Azure AD Join** and click **Next**.
+![image](https://github.com/user-attachments/assets/32433e68-03fd-43ad-a204-7862cc218a96)
+![image](https://github.com/user-attachments/assets/a5cdac0f-f321-43b6-8763-3f5a2ac14758)
+![image](https://github.com/user-attachments/assets/c08c5ef2-1f93-439b-a1c3-6744ddb92874)
+
+
 3. Choose **Windows Server 2022** as the device type.
 4. Follow the instructions to configure synchronization for devices in your on-premises AD.
 5. Complete the setup, and allow Azure AD Connect to begin synchronizing devices.
