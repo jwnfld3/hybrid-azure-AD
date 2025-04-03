@@ -17,9 +17,22 @@ This repository contains a lab that demonstrates how to connect a Windows Server
 ### Step 1: Install and Configure Azure AD Connect
 
 1. Download the latest version of **Azure AD Connect** from the [Microsoft website](https://www.microsoft.com/en-us/download/details.aspx?id=47594).
+![image](https://github.com/user-attachments/assets/5b59dcf1-06a7-4b20-88e0-598957a46267)
+![image](https://github.com/user-attachments/assets/277dfa29-e64a-4609-a806-b6bc68b609cf)
+
 2. Run the installation and follow the prompts to configure Azure AD Connect.
-3. During setup, select **"Customize"** and choose **Hybrid Azure AD Join** as the synchronization method.
+![image](https://github.com/user-attachments/assets/48f333eb-f39b-4533-80fc-dd86159cb62b)
+
+3. During setup, select **"Use Express Settings"** and choose **Hybrid Azure AD Join** as the synchronization method.
+![image](https://github.com/user-attachments/assets/55e6fad4-4f35-4068-af84-04b37d221102)
+
+
 4. Enter your **Azure AD credentials** (Global Administrator role) to allow Azure AD Connect to sync with your Azure AD instance.
+![image](https://github.com/user-attachments/assets/ac9045a4-f9eb-4122-969a-229c3c313045)
+![image](https://github.com/user-attachments/assets/375fd3b4-c09b-46f9-9622-6cccc9a01794)
+![image](https://github.com/user-attachments/assets/54504fb0-2198-4f44-8dce-31dfb20cffed)
+![image](https://github.com/user-attachments/assets/d84e6038-8a9e-456c-8418-9e3547e81f7b)
+
 5. Confirm that **Azure AD Connect** is properly set up and can sync with both on-premises Active Directory and Azure AD.
 
 ### Step 2: Configure Hybrid Azure AD Join in Azure AD Connect
