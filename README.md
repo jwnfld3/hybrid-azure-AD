@@ -16,6 +16,27 @@ This repository contains a lab that demonstrates how to connect a Windows Server
 
 ### Step 1: Install and Configure Azure AD Connect
 
+**Azure AD Connect** is a Microsoft tool that integrates on-premises directories (like Active Directory Domain Services) with Microsoft Entra ID (formerly Azure Active Directory). It enables a hybrid identity by synchronizing identity data between on-premises environments and Azure, allowing users to use the same credentials for both cloud and on-premises resources.
+
+---
+
+### Key Functions:
+- **Directory Synchronization**: Syncs users, groups, passwords, and other directory objects from on-premises AD to Microsoft Entra ID.
+- **Single Sign-On (SSO)**: Allows users to authenticate once and access both on-premises and cloud resources without re-entering credentials.
+- **Password Hash Sync (PHS)**: Enables cloud authentication by syncing password hashes to Azure.
+- **Pass-through Authentication (PTA)**: Validates passwords directly against the on-premises Active Directory in real time.
+- **Federation Integration**: Supports federation with Active Directory Federation Services (AD FS) for more advanced scenarios.
+
+---
+
+### Why It Matters:
+Azure AD Connect is essential for organizations with a hybrid cloud infrastructure, as it:
+- Maintains consistent user identities across environments.
+- Simplifies user access and administration.
+- Enables secure access to Microsoft 365, Azure, and other cloud applications.
+
+---
+
 1. Download the latest version of **Azure AD Connect** from the [Microsoft website](https://www.microsoft.com/en-us/download/details.aspx?id=47594).
 ![image](https://github.com/user-attachments/assets/5b59dcf1-06a7-4b20-88e0-598957a46267)
 ![image](https://github.com/user-attachments/assets/277dfa29-e64a-4609-a806-b6bc68b609cf)
