@@ -58,6 +58,40 @@ Azure AD Connect is essential for organizations with a hybrid cloud infrastructu
 
 ### Step 2: Configure Hybrid Azure AD Join in Azure AD Connect
 
+**Hybrid Azure AD Join** is a configuration that allows Windows devices to be joined to both the on-premises Active Directory and Microsoft Entra ID (formerly Azure AD). This setup enables unified device management and identity, bridging on-premises infrastructure with the cloud.
+
+When devices are **Hybrid Azure AD Joined**, they are registered with Microsoft Entra ID while still being managed by Group Policy and other on-premises tools. This provides a path for organizations to move toward cloud-based management gradually.
+
+---
+
+### What Does "Configure Hybrid Azure AD Join in Azure AD Connect" Mean?
+
+This process involves enabling and configuring the **device registration** settings in **Azure AD Connect** to ensure that domain-joined Windows devices automatically register with Microsoft Entra ID.
+
+---
+
+### Why It Matters:
+- Enables **Single Sign-On (SSO)** from domain-joined devices to Azure and Microsoft 365 services.
+- Allows for a **gradual transition** from on-premises to cloud-based device management using tools like Microsoft Intune.
+- Supports **Conditional Access** policies and **Multi-Factor Authentication** for increased security.
+
+---
+
+### How It Works:
+1. **Enable Device Writeback (optional)** – Allows Entra-joined devices to be written back to the on-prem AD.
+2. **Configure Azure AD Connect**:
+   - Launch the **Azure AD Connect wizard**.
+   - Choose **Configure device options**.
+   - Select **Configure Hybrid Azure AD Join**.
+   - Choose the appropriate **Windows version (10 or newer)**.
+   - Specify the **on-premises forest** and allow the wizard to verify connectivity.
+3. **Group Policy Configuration**:
+   - Configure **Automatic Device Registration** using Group Policy on client devices.
+
+Once this is set up, domain-joined devices that meet the criteria will automatically register with Microsoft Entra ID the next time they restart or check in with AD.
+
+---
+
 1. Open **Azure AD Connect** and go to **Configure**.
 ![image](https://github.com/user-attachments/assets/26879d87-1545-4b88-be2e-6991df0e19f6)
 ![image](https://github.com/user-attachments/assets/f0595dc6-fd60-48fa-ab41-20f18ebd67be)
